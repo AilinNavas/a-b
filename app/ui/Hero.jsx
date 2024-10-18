@@ -1,42 +1,64 @@
-// import React from 'react'
-// import Image from 'next/image'
-// import hero from '@/public/hero.jpg'
 
-// const Hero = () => {
-//     return (
-//         <section className='mt-28'>
-           
-//                 <Image src={hero} className='w-full relative' />
-//                 <div className='bg-black opacity-50 absolute top-28 w-full h-full '></div>
-//                 <p className=' text-white text-right font-medium text-xl max-w-80 md:text-3xl lg:text-5xl lg:max-w-3xl absolute top-40 right-4 md:top-40 lg:top-60 md:right-10'>
-//                     <span className='lg:block'>Donde la experiencia se encuentra con la <span className='text-beige'>empatía</span>,</span>
-//                     <span> y la <span className='text-beige'>justicia</span> se convierte en <span className='text-beige'>realidad</span></span>
-//                 </p>
-         
-//         </section>
-//     )
-// }
-
-// export default Hero
-import React from 'react';
-import Image from 'next/image';
-import hero from '@/public/hero.jpg';
+import Image from "next/image";
+import hero2 from '@/public/desktop.webp';
+import hero1 from '@/public/mobile.webp';
 
 const Hero = () => {
     return (
-        <section className='relative mt-28'>
-            <Image src={hero} className='w-full' />
-            <div className='bg-black opacity-50 absolute inset-0'></div>
-            <p className=' md:block text-white text-right font-medium text-xl max-w-80 md:text-3xl lg:text-5xl lg:max-w-3xl absolute top-8 right-4 md:top-24 lg:top-60 md:right-10'>
-                <span className='block'>
-                    Donde la experiencia se encuentra con la <span className='text-beige'>empatía</span>,
-                </span>
-                <span>
-                    y la <span className='text-beige'>justicia</span> se convierte en <span className='text-beige'>realidad</span>
-                </span>
-            </p>
-        </section>
-    );
-};
+        <div className='relative py-32 md:py-64'>
+       
+
+            <div className="px-4 max-w-7xl mx-auto flex md:flex-row-reverse">
+                <div className="lg:w-1/2 p-4 flex bg-black/50 ">
+                    <p className="text-white font-medium text-2xl max-w-80 md:max-w-3xl md:text-4xl lg:text-5xl space-y-4">
+                        <span className='block'>
+                            Donde la experiencia se encuentra con la <span className='text-beige font-semibold'>empatía</span>,
+                        </span>
+                        <span>
+                            y la <span className='text-beige font-semibold'>justicia</span> se convierte en <span className='text-beige font-semibold'>realidad</span>
+                        </span>
+                    </p>
+                </div>
+                <div className="">
+
+                </div>
+
+            </div>
+
+            <div className="px-4 max-w-7xl mx-auto mt-4">
+                <div className="flex lg:justify-end">
+                    <a href={'https://walink.co/7712bc'} target="_blank"
+                        rel="noopener noreferrer">
+                        <button className=" px-7 py-1 md:py-2 bg-beige text-lg font-semibold z-0 hover:bg-black hover:text-white ease-in duration-300">
+                            Solicitar asesoría
+                        </button>
+                    </a>
+                </div>
+            </div>
+         
+
+            {/* Imagen para dispositivos móviles */}
+            <Image
+                src={hero1}
+                alt='Diseño exclusivo - móvil'
+                quality={80}
+                priority
+                sizes="(max-width: 768px) 100vw"
+                className='w-full block lg:hidden absolute top-[110px] -z-10'
+                placeholder="blur"
+            />
+
+            {/* Imagen para pantallas grandes */}
+            <Image
+                src={hero2}
+                alt='Diseño exclusivo - escritorio'
+                quality={80}
+                sizes="(min-width: 1024px) 100vw"
+                className='w-full hidden lg:block absolute top-0 -z-10'
+                placeholder="blur"
+            />
+        </div>
+    )
+}
 
 export default Hero;

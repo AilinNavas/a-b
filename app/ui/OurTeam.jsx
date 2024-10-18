@@ -13,7 +13,7 @@ const OurTeam = () => {
                 <div className='grid lg:grid-cols-2 justify-items-center gap-y-10 lg:gap-x-10'>
                     {/* Imagen 1 */}
                     <div className='text-center '>
-                        <Image src={doctora} className='lg:max-w-md mx-auto' />
+                        <Image src={doctora} className='lg:max-w-md mx-auto rounded-lg' />
                         <h2 className='text-beige font-bold text-xl mt-4'>EVA ÁLVAREZ</h2>
                         <hr className='border-t-2 border-beige w-20 mx-auto mt-2 mb-4' />
                         <div className='flex justify-center space-x-4 mb-4 text-beige'>
@@ -27,7 +27,7 @@ const OurTeam = () => {
                         </ul>
                     </div>
                     <div className='text-center '>
-                        <Image src={doctor} className='lg:max-w-md mx-auto' />
+                        <Image src={doctor} className='lg:max-w-md mx-auto rounded-lg' />
                         <h2 className='text-beige font-bold text-xl mt-4'>PABLO BIAMONTE</h2>
                         <hr className='border-t-2 border-beige w-20 mx-auto mt-2 mb-4' />
                         <div className='flex justify-center space-x-4 mb-4 text-beige'>

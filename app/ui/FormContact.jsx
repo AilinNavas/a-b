@@ -13,61 +13,61 @@ const FormContact = () => {
             Completa el siguiente formulario y uno de nuestros especialistas se comunicará contigo a la brevedad.
           </p>
 
-          <form className="space-y-4 my-10">
+          <form className="space-y-4 my-10 border-2 bg-black">
             <div>
-              <label htmlFor="name" className="block text-black font-medium mb-2">
+              <label htmlFor="name" className="block text-beige font-medium mb-2">
                 Nombre y Apellido
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-beige lg:w-9/12"
+                className="w-full rounded-md focus:outline-none focus:border-beige lg:w-9/12"
                 placeholder="Tu nombre y apellido"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-black font-medium mb-2">
+              <label htmlFor="email" className="block text-beige font-medium mb-2">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-beige lg:w-9/12"
+                className="w-full rounded-md focus:outline-none focus:border-beige lg:w-9/12"
                 placeholder="tuemail@ejemplo.com"
                 required
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-black font-medium mb-2">
+              <label htmlFor="phone" className="block text-beige font-medium mb-2">
                 Teléfono
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                className=" text-black w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-beige lg:w-9/12"
+                className=" text-black w-full rounded-md focus:outline-none focus:border-beige lg:w-9/12"
                 placeholder="Tu número de teléfono"
                 required
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-black font-medium mb-2">
+              <label htmlFor="message" className="block text-beige font-medium mb-2">
                 Mensaje
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-beige lg:w-9/12"
+                className="w-full rounded-md focus:outline-none focus:border-beige lg:w-9/12"
                 placeholder="Escribe tu mensaje aquí"
                 required
               ></textarea>
             </div>
             <div className="text-left">
-              <button class="px-5 py-2 border-2 text-xl font-semibold border-black shadow-lg hover:bg-black text-black hover:text-beige duration-300 cursor-pointer active:scale-[0.98]"><a class="" href="">Enviar</a></button>
+              <button className="px-5 py-2 border-2 text-xl font-semibold border-black shadow-lg hover:bg-black text-beige hover:text-beige duration-300 cursor-pointer active:scale-[0.98]"><a class="" href="">Enviar</a></button>
             </div>
           </form>
 

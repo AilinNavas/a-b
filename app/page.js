@@ -7,6 +7,7 @@ import ContactUs from './ui/ContactUs'
 import OurServices from './ui/OurServices'
 import FormContact from './ui/FormContact'
 import Footer from './ui/Footer'
+import InfoBottom from './ui/InfoBottom'
 
 
 const page = () => {
@@ -20,6 +21,7 @@ const page = () => {
    <OurServices />
    <FormContact />
    <Footer />
+   <InfoBottom />
 
     </>
 
