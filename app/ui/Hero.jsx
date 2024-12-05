@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import hero2 from '@/public/desktop.webp';
-import hero1 from '@/public/mobile.webp';
+import hero1 from '@/public/mobile2.webp';
 
 const Hero = () => {
     return (
@@ -43,8 +43,8 @@ const Hero = () => {
                 alt='Diseño exclusivo - móvil'
                 quality={80}
                 priority
-                sizes="(max-width: 768px) 100vw"
-                className='w-full block lg:hidden absolute top-[110px] -z-10'
+                sizes="(max-width: 768px) 100vw "
+                className='w-full block lg:hidden absolute -top-[70px] -z-10'
                 placeholder="blur"
             />
 

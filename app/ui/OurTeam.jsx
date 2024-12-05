@@ -25,6 +25,7 @@ const OurTeam = () => {
                             <li>Asesora jurídica en varias startups tecnológicas y empresas emergentes en el ámbito de la innovación y el emprendimiento.</li>
                             <li>Conferencista internacional en temas de derecho tecnológico y regulaciones digitales, y autora de un libro sobre la transformación digital en el ámbito legal.</li>
                         </ul>
+                     
                     </div>
                     <div className='text-center '>
                         <Image src={doctor} className='lg:max-w-md mx-auto rounded-lg' />

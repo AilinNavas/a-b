@@ -5,7 +5,7 @@ import justicia from '@/public/justicia.svg'
 
 const OurServices = () => {
   return (
-    <section id='services' className='border-2 border-white'>
+    <section id='services'>
     <div className='bg-black z-20 py-16 lg:py-20'>
       <div className='lg:max-w-7xl max-w-5xl mx-auto px-4'>
 

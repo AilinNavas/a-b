@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import logo from '@/public/logos/logo1-svg-trans.svg';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -11,17 +12,17 @@ export default function Navbar() {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className="fixed top-0 w-full z-10 bg-black text-beige font-medium text-xl h-28">
+    <div className="top-0 w-full z-10 bg-black text-beige font-medium text-xl h-28">
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full px-4 ">
         {/* Logo */}
         <div className="flex items-center h-48 w-48">
-          <Image
+         <Link href={'/'}><Image
             src={logo}
             alt="Logo"
             className="h-full w-full z-50" // Ajusta la altura del logo según sea necesario
             // width={100} // Ajusta el ancho del logo según sea necesario
             // height={40} // Ajusta la altura del logo según sea necesario
-          />
+          /></Link> 
         </div>
 
         {/* Menú de navegación en desktop */}
