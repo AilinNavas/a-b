@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: #d4a160 !important; /* Fondo negro */
+  -webkit-text-fill-color: #000000!important; /* Texto beige */
+  caret-color: #000000; /* Cursor beige */
+  border-color: #000000 !important; /* Borde beige */
+  transition: background-color 5000s ease-in-out 0s;
+}

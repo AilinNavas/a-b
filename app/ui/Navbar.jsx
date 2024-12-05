@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import logo from '@/public/logos/logo1-svg-trans.svg';
 import { useState } from 'react';
-import Link from 'next/link';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Navbar() {
@@ -12,14 +11,14 @@ export default function Navbar() {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className="fixed top-0 w-full z-10 bg-black text-beige font-medium h-28">
+    <div className="fixed top-0 w-full z-10 bg-black text-beige font-medium text-xl h-28">
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full px-4 ">
         {/* Logo */}
         <div className="flex items-center h-48 w-48">
           <Image
             src={logo}
             alt="Logo"
-            className="h-full w-full" // Ajusta la altura del logo según sea necesario
+            className="h-full w-full z-50" // Ajusta la altura del logo según sea necesario
             // width={100} // Ajusta el ancho del logo según sea necesario
             // height={40} // Ajusta la altura del logo según sea necesario
           />
@@ -28,25 +27,25 @@ export default function Navbar() {
         {/* Menú de navegación en desktop */}
         <ul className="hidden md:flex space-x-6">
        
-          <li className=' hover:text-white transition-all duration-300'>
-            <Link href="#about" scroll={false}>
+          <li className=' hover:text-white transition-all duration-300 font-medium'>
+            <a href="#about" scroll={false}>
               Estudio
-            </Link>
+            </a>
           </li>
           <li className=' hover:text-white transition-all duration-300'>
-            <Link href="#services" scroll={false}>
+            <a href="#team" scroll={false}>
               Abogados
-            </Link>
+            </a>
           </li>
           <li className=' hover:text-white transition-all duration-300'>
-            <Link href="#portfolio" scroll={false}>
+            <a href="#services" scroll={false}>
               Servicios
-            </Link>
+            </a>
           </li>
           <li className=' hover:text-white transition-all duration-300'>
-            <Link href="#contact" scroll={false}>
+            <a href="#contact" scroll={false}>
               Contacto
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -59,33 +58,28 @@ export default function Navbar() {
         <div
           className={`${
             nav ? 'absolute' : 'hidden'
-          } top-0 left-0 w-full h-screen bg-black text-white flex flex-col justify-center items-center`}
+          } top-0 left-0 w-full h-screen bg-black text-beige flex flex-col justify-center items-center`}
         >
           <ul className="space-y-8 text-center">
             <li className="text-2xl">
-              <Link href="#home" scroll={false} onClick={handleNav}>
-                Home
-              </Link>
+              <a href="#about" scroll={false} onClick={handleNav}>
+                Estudio
+              </a>
             </li>
             <li className="text-2xl">
-              <Link href="#about" scroll={false} onClick={handleNav}>
-                About
-              </Link>
+              <a href="#team" scroll={false} onClick={handleNav}>
+                Abogados
+              </a>
             </li>
             <li className="text-2xl">
-              <Link href="#services" scroll={false} onClick={handleNav}>
-                Services
-              </Link>
+              <a href="#services" scroll={false} onClick={handleNav}>
+                Servicios
+              </a>
             </li>
             <li className="text-2xl">
-              <Link href="#portfolio" scroll={false} onClick={handleNav}>
-                Portfolio
-              </Link>
-            </li>
-            <li className="text-2xl">
-              <Link href="#contact" scroll={false} onClick={handleNav}>
-                Contact
-              </Link>
+              <a href="#contact" scroll={false} onClick={handleNav}>
+                Contacto
+              </a>
             </li>
           </ul>
         </div>

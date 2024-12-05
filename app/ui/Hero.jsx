@@ -9,13 +9,13 @@ const Hero = () => {
        
 
             <div className="px-4 max-w-7xl mx-auto flex md:flex-row-reverse">
-                <div className="lg:w-1/2 p-4 flex bg-black/50 ">
-                    <p className="text-white font-medium text-2xl max-w-80 md:max-w-3xl md:text-4xl lg:text-5xl space-y-4">
+                <div className="lg:w-1/2 p-4 flex bg-black/50 rounded">
+                    <p className="text-white text-2xl max-w-80 md:max-w-3xl md:text-4xl lg:text-5xl space-y-4">
                         <span className='block'>
-                            Donde la experiencia se encuentra con la <span className='text-beige font-semibold'>empatía</span>,
+                            Donde la experiencia se encuentra con la <span className='text-beige font-medium'>empatía</span>,
                         </span>
                         <span>
-                            y la <span className='text-beige font-semibold'>justicia</span> se convierte en <span className='text-beige font-semibold'>realidad</span>
+                            y la <span className='text-beige font-medium'>justicia</span> se convierte en <span className='text-beige font-medium'>realidad</span>
                         </span>
                     </p>
                 </div>
@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="flex lg:justify-end">
                     <a href={'https://walink.co/7712bc'} target="_blank"
                         rel="noopener noreferrer">
-                        <button className=" px-7 py-1 md:py-2 bg-beige text-lg font-semibold z-0 hover:bg-black hover:text-white ease-in duration-300">
+                        <button className=" px-7 py-1 md:py-2 border-2 border-black bg-black text-beige text-lg font-semibold z-0 hover:bg-transparent hover:text-black ease-in duration-300 rounded-md">
                             Solicitar asesoría
                         </button>
                     </a>

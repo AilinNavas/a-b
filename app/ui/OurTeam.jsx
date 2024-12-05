@@ -6,7 +6,7 @@ import doctor from '@/public/doctor.png'
 
 const OurTeam = () => {
     return (
-        <section className='bg-white z-20 py-16'>
+        <section id='team' className='bg-white z-20 py-16'>
             <div className='lg:max-w-7xl max-w-5xl mx-auto px-4'>
                 <h1 className='text-beige font-bold text-center text-2xl md:text-3xl lg:text-4xl mb-8'>NUESTRO EQUIPO</h1>
                 <p className='text-black mb-8 text-lg text-center'>Nuestro estudio está liderado por abogados con una vasta trayectoria y una profunda especialización en diversas áreas del derecho</p>

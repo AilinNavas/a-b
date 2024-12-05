@@ -14,7 +14,7 @@ const ContactUs = () => {
 
                     <p className="text-black text-xl mb-6"> Nuestra misión es encontrar soluciones ágiles y eficientes, basadas en la atención personalizada y cercana de nuestros profesionales. Nos enfocamos en la prevención y la mediación, principios que han definido a nuestro estudio jurídico desde su creación y que guían la actuación de cada uno de nuestros integrantes.</p>
 
-                    <button className="px-5 py-2 border-2 text-xl font-semibold border-black shadow-lg hover:bg-black text-black hover:text-beige duration-300 cursor-pointer active:scale-[0.98]"><a class="" href="">Contáctenos</a></button>
+                    <button className="rounded-md px-5 py-2 border-2 text-xl font-semibold text-beige bg-black border-black shadow-lg hover:bg-transparent hover:text-black duration-300 cursor-pointer active:scale-[0.98]"><a className="" href="">Contáctenos</a></button>
 
 
                 </div>
